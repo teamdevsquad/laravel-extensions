@@ -11,6 +11,9 @@
   "config": {
     "preferred-install": "dist"
   },
+  "require": {
+    "php": "^7.0"
+  },
   "extra": {
     "laravel": {
       "providers": [
