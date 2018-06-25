@@ -1,6 +1,6 @@
 {
-  "name": "devsquad/architecture",
-  "description": "Basic Architecture for DevSquad Laravel projects",
+  "name": "devsquad/extensions",
+  "description": "Extension Classes for DevSquad Laravel projects",
   "authors": [
     {
       "name": "Team DevSquad",

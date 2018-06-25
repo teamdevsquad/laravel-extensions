@@ -1,6 +1,6 @@
 <?php
 
-namespace DevSquad\Architecture\Console;
+namespace DevSquad\Extensions\Console;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;

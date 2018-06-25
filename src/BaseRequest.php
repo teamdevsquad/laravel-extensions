@@ -1,6 +1,6 @@
 <?php
 
-namespace DevSquad\Architecture;
+namespace DevSquad\Extensions;
 
 use Illuminate\Foundation\Http\FormRequest;
 

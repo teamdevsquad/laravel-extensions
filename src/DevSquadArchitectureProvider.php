@@ -1,10 +1,10 @@
 <?php
 
-namespace DevSquad\Architecture;
+namespace DevSquad\Extensions;
 
-use DevSquad\Architecture\Console\FormMakeCommand;
-use DevSquad\Architecture\Console\RequestMakeCommand;
-use DevSquad\Architecture\Console\ServiceMakeCommand;
+use DevSquad\Extensions\Console\FormMakeCommand;
+use DevSquad\Extensions\Console\RequestMakeCommand;
+use DevSquad\Extensions\Console\ServiceMakeCommand;
 use Illuminate\Support\ServiceProvider;
 
 class DevSquadArchitectureProvider extends ServiceProvider

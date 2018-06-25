@@ -2,7 +2,7 @@
 
 namespace App\Forms;
 
-use DevSquad\Architecture\BaseForm;
+use DevSquad\Extensions\BaseForm;
 
 class DummyClass extends BaseForm
 {
