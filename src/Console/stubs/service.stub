@@ -1,0 +1,46 @@
+<?php
+
+namespace App\Services;
+
+use Illuminate\Support\Facades\DB;
+use App\Forms\DummyModelForm;
+use App\Models\DummyModel;
+
+class DummyClass
+{
+    public function create(DummyModelForm $form): DummyModel
+    {
+        return DB::transaction(function () use ($form) {
+            $obj              = new DummyModel();
+
+            //
+
+            $obj->save();
+
+            // event(new DummyModelCreated($obj));
+
+            return $obj;
+        });
+    }
+
+    public function update(DummyModelForm $form, DummyModel $obj): DummyModel
+    {
+        return DB::transaction(function () use ($form, $obj) {
+            //
+
+            $obj->save();
+
+            // event(new DummyModelUpdated($obj));
+
+            return $obj;
+        });
+    }
+
+    public function delete(DummyModel $obj)
+    {
+        return DB::transaction(function () use ($obj) {
+            $obj->delete();
+            // event(new DummyModelDeleted($obj));
+        });
+    }
+}

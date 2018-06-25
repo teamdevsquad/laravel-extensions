@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Http\Requests;
+
+use DevSquad\Architecture\BaseRequest;
+use App\Forms\DummyForm;
+
+class DummyClass extends BaseRequest
+{
+    public function form(): DummyForm
+    {
+        return new DummyForm($this->context());
+    }
+
+    public function authorize()
+    {
+        return true;
+    }
+
+    public function rules()
+    {
+        return [
+            //
+        ];
+    }
+}

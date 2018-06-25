@@ -1,0 +1,12 @@
+{
+  "name": "devsquad/architecture",
+  "description": "Basic Architecture for DevSquad Laravel projects",
+  "authors": [
+    {
+      "name": "Team DevSquad",
+      "email": "team@devsquad.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {}
+}
