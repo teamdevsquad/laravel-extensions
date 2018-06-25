@@ -1,12 +1,23 @@
 {
   "name": "devsquad/extensions",
   "description": "Extension Classes for DevSquad Laravel projects",
+  "license": "MIT",
   "authors": [
     {
       "name": "Team DevSquad",
       "email": "team@devsquad.com"
     }
   ],
-  "minimum-stability": "dev",
+  "config": {
+    "preferred-install": "dist"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DevSquad\\Extensions\\DevSquadExtensionProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable",
   "require": {}
 }

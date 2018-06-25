@@ -7,7 +7,7 @@ use DevSquad\Extensions\Console\RequestMakeCommand;
 use DevSquad\Extensions\Console\ServiceMakeCommand;
 use Illuminate\Support\ServiceProvider;
 
-class DevSquadArchitectureProvider extends ServiceProvider
+class DevSquadExtensionProvider extends ServiceProvider
 {
     public function boot()
     {
