@@ -7,7 +7,7 @@ use Symfony\Component\Console\Input\InputOption;
 
 class ServiceMakeCommand extends GeneratorCommand
 {
-    protected $name = 'make:service';
+    protected $name = 'make:ds-service';
     protected $description = 'Create a new service class. Needs to provide a model';
     protected $type = 'Service';
 

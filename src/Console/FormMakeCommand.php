@@ -6,7 +6,7 @@ use Illuminate\Console\GeneratorCommand;
 
 class FormMakeCommand extends GeneratorCommand
 {
-    protected $name = 'make:form';
+    protected $name = 'make:ds-form';
     protected $description = 'Create a new form class';
     protected $type = 'Form';
 
