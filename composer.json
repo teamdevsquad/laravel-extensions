@@ -14,5 +14,17 @@
   "require": {
     "php": "^7.0"
   },
+  "autoload": {
+    "psr-4": {
+      "DevSquad\\Extensions\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DevSquad\\Extensions\\DevSquadExtensionProvider"
+      ]
+    }
+  },
   "minimum-stability": "stable"
 }
