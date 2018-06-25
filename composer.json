@@ -14,13 +14,5 @@
   "require": {
     "php": "^7.0"
   },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "DevSquad\\Extensions\\DevSquadExtensionProvider"
-      ]
-    }
-  },
-  "minimum-stability": "stable",
-  "require": {}
+  "minimum-stability": "stable"
 }
