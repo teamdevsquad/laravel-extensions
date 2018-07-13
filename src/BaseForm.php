@@ -33,8 +33,9 @@ class BaseForm
 
     public function __get($field)
     {
+        $method = lcfirst(str_replace('_', '', ucwords($field, '_')));
         $field  = lcfirst($field);
-        $method = "get{$field}";
+        $method = "get{$method}";
         if (method_exists($this, $method)) {
             return $this->$method();
         }
