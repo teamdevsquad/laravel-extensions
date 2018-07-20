@@ -2,7 +2,6 @@
 
 namespace DevSquad\Extensions;
 
-use DevSquad\Extensions\Console\FormMakeCommand;
 use DevSquad\Extensions\Console\MigrateMakeCommand;
 use DevSquad\Extensions\Console\PayloadMakeCommand;
 use DevSquad\Extensions\Console\RequestMakeCommand;
