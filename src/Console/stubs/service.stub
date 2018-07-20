@@ -5,8 +5,9 @@ namespace App\Services;
 use Illuminate\Support\Facades\DB;
 use App\Forms\DummyModelForm;
 use App\Models\DummyModel;
+use DevSquad\Extensions\Service;
 
-class DummyClass
+class DummyClass extends Service
 {
     public function create(DummyModelForm $form): DummyModel
     {

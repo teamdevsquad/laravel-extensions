@@ -2,14 +2,14 @@
 
 namespace App\Http\Requests;
 
-use DevSquad\Extensions\BaseRequest;
-use App\Forms\DummyForm;
+use DevSquad\Extensions\Request;
+use App\Payloads\DummyPayload;
 
-class DummyClass extends BaseRequest
+class DummyClass extends Request
 {
-    public function form(): DummyForm
+    public function payload(): DummyPayload
     {
-        return new DummyForm($this->context());
+        return new DummyPayload($this->context());
     }
 
     public function authorize()

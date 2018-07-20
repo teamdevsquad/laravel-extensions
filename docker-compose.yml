@@ -1,0 +1,43 @@
+version: '3.4'
+
+networks:
+  frontend:
+    driver: bridge
+
+x-variables:
+  # Versions
+  - &php-version PHP_VERSION=7.2
+  - &node-version NODE_VERSION=9.11.2
+  - &yarn-version YARN_VERSION=latest
+  - &chrome-driver-version CHROME_DRIVER_VERSION=2.32
+
+  # Container names
+  - &workspace laravel_extensions_workspace
+
+  # Misc
+  - &box-name BOX_NAME=LaravelExtensions
+
+services:
+
+    workspace:
+      container_name: *workspace
+      build:
+        context: ./docker/config/workspace
+        args:
+          - *chrome-driver-version
+          - *yarn-version
+          - *php-version
+          - *node-version
+          - *box-name
+      volumes:
+        - ./:/var/www:cached
+        - ./docker/config/workspace/.aliases:/home/devsquad/.aliases
+        - ./docker/data/history:/home/devsquad/history
+        - ./docker/data/.ssh:/home/devsquad/.ssh
+      extra_hosts:
+        - "dockerhost:${YOUR_IP_ADDRESS:-172.16.0.100}"
+      tty: true
+      environment:
+        - PHP_IDE_CONFIG=serverName=devsquad-server
+      networks:
+        - frontend
